@@ -1,0 +1,26 @@
+name: Build Zyphix
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+      - name: Build plugin
+        run: mvn -B clean package
+      - name: Upload plugin JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: Zyphix-Plugin
+          path: target/zyphix-1.0.0.jar
+      - name: Upload resource pack
+        uses: actions/upload-artifact@v4
+        with:
+          name: Zyphix-Resourcepack
+          path: resourcepack/
