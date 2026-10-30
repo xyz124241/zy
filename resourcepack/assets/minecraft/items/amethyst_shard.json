@@ -1,0 +1,76 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "property": "minecraft:custom_model_data",
+    "index": 0,
+    "entries": [
+      {
+        "threshold": 10001.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "neptun:item/zyphix_stage0"
+        }
+      },
+      {
+        "threshold": 10002.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "neptun:item/zyphix_stage1"
+        }
+      },
+      {
+        "threshold": 10003.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "neptun:item/zyphix_stage2"
+        }
+      },
+      {
+        "threshold": 10004.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "neptun:item/zyphix_stage3"
+        }
+      },
+      {
+        "threshold": 10005.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "neptun:item/zyphix_stage4"
+        }
+      },
+      {
+        "threshold": 10006.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "neptun:item/zyphix_cluster_small"
+        }
+      },
+      {
+        "threshold": 10007.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "neptun:item/zyphix_cluster_large"
+        }
+      },
+      {
+        "threshold": 10008.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "neptun:item/zyphix_ore"
+        }
+      },
+      {
+        "threshold": 10009.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "neptun:item/zyphix_cluster"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/amethyst_shard"
+    }
+  }
+}

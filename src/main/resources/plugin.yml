@@ -1,0 +1,21 @@
+name: Zyphix
+version: 1.0.0
+main: de.neptun.zyphix.ZyphixPlugin
+api-version: '1.21'
+author: Neptun SMP
+commands:
+  zy:
+    description: Zyphix crystal administration
+    usage: /zy <spawn|undo>
+  aci:
+    description: Admin custom item editor
+    usage: /aci [create|recipe|delete|list]
+  ci:
+    description: Browse custom items and recipes
+    usage: /ci
+  cn:
+    description: Rename the item in your hand with MiniMessage
+    usage: /cn <MiniMessage>
+permissions:
+  zyphix.admin:
+    default: op
